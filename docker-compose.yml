@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  vuejs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "36001:80"
+    restart: always
